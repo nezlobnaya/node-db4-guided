@@ -17,3 +17,33 @@ For the `animals` the client wants to record:
 
 Determine the database tables necessary to track this information.
 Label any relationships between table.
+
+## Solution 
+
+Tables: Animals, Species, Zoos
+
+Animals <==> Species : one -to-many
+Animals (many) <==> Species (one)
+
+Zoos (many) <==> Animals (many)
+
+## Table details
+
+zoos:
+- id
+- zoo_name
+- address
+
+species:
+- id
+- species_name
+
+animals:
+- id
+- name
+- species_id
+
+
+zoo_animals
+- zoo_id
+- animal

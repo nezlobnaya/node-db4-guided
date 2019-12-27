@@ -29,6 +29,7 @@ server.get('/api/animals', (req, res) => {
     res.status(200).json(animals);
   })
   .catch(error => {
+    console.log(error)
     res.status(500).json(error);
   });
 });
